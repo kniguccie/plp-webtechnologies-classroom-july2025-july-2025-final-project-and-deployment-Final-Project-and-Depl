@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Innovations - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Tech Innovations</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Innovate the Future</h1>
+                <p class="hero-description">Transforming industries with cutting-edge technology solutions</p>
+                <button class="cta-button" onclick="scrollToProducts()">Explore Solutions</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/image (8).jpg" alt="Innovative Technology" id="heroImage">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Our Solutions</h2>
+            <div class="features-grid" id="productsGrid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>AI Solutions</h3>
+                    <p>Advanced artificial intelligence that learns and adapts to your business needs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">☁️</div>
+                    <h3>Cloud Services</h3>
+                    <p>Scalable cloud infrastructure with enterprise-grade security and performance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Cybersecurity</h3>
+                    <p>Comprehensive protection against evolving digital threats and vulnerabilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Slider -->
+    <section class="slider-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="slider-container">
+                <div class="slider" id="imageSlider">
+                    <div class="slide active">
+                        <img src="images/image (4).jpg" alt="Smart City Initiative">
+                        <div class="slide-content">
+                            <h3>Smart City Initiative</h3>
+                            <p>IoT integration for urban infrastructure management</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/image (5).jpg" alt="Healthcare Analytics">
+                        <div class="slide-content">
+                            <h3>Healthcare Analytics</h3>
+                            <p>AI-driven patient data analysis platform</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/image (6).jpg" alt="Financial Automation">
+                        <div class="slide-content">
+                            <h3>Financial Automation</h3>
+                            <p>Blockchain-based transaction processing system</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+                <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tech Innovations</h3>
+                    <p>Leading the way in technological advancement and innovation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 info@techinnovations.com</p>
+                    <p>📱 +251 (955) 123-456</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tech Innovations. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
